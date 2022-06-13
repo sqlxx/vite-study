@@ -8,8 +8,7 @@ const Editor = () => {
     return (
         <EditorWrap>
             <EditorDiv className="editor-container">
-                <Workspace>
-                </Workspace>
+                <Workspace></Workspace>
             </EditorDiv>
         </EditorWrap>
     )
