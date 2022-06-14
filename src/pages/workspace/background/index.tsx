@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import styled from 'styled-components'
 import { useMemo } from 'react';
 
@@ -40,7 +40,11 @@ function createVerticalLines(width:number, gap:number): TwoPoints[] {
     return res;
 }
 
-const Lines = ({lines} : {lines:TwoPoints[]}) => {
+type linesProps = {
+    lines: TwoPoints[]
+}
+
+const Lines = ({lines} : linesProps) : ReactElement => {
     return (
         <>
             {lines.map((line, i) => ( 
@@ -51,7 +55,7 @@ const Lines = ({lines} : {lines:TwoPoints[]}) => {
     )
 }
 
-const GridBackground = () => {
+const GridBackground = () : ReactElement => {
     const width:number = 4000;
     const height:number = 4000;
     const gap:number = 10;
