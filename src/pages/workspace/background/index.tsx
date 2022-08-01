@@ -68,8 +68,6 @@ const GridBackground = () : ReactElement => {
             <svg width={width} height={height} xmlns="http://www.w3.org/2000/svg" viewBox={`0 0 ${width} ${height}`}>
                 <Lines lines = {horizontalLines}/>
                 <Lines lines = {verticalLines}/>
-                <Lines lines = {[{start: {x:5,y:100}, end: {x:100,y:300}}]} />
-                <line x1="0" x2="90" y1="0" y2="90" stroke="#e0e0e0" strokeWidth="1px" shapeRendering="optimizeSpeed"/>
             </svg>
         </GridBackgroundDiv>
     )
