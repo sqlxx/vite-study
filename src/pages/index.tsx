@@ -2,6 +2,7 @@ import React from 'react';
 import { EditorDiv, EditorWrap } from './styled-components';
 import Workspace from './workspace';
 import ScrollableContext from './workspace/ScrollableContent';
+import { Button } from 'antd';
 
 const Editor = () => {
     
