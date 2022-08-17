@@ -6,7 +6,7 @@ export const EditorWrap = styled.div`
     }
 `;
 
-export const EditorDiv = styled.div`
+export const EditorStyle = styled.div`
     width: 100%;
     height: 100%;
 

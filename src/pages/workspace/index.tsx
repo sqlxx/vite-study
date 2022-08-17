@@ -19,8 +19,7 @@ const Workspace = () => {
     }, []);
 
     return (
-        <WorkspaceDiv className="workspace-container" onClick={handleClickWorkspace}>
-            <div>status is: {statusText}</div>
+        <WorkspaceDiv className="workspace-container" >
             <ScrollableContext></ScrollableContext>
         </WorkspaceDiv>
     )
